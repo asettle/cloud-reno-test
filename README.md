@@ -18,6 +18,10 @@ This a test repo from reno notes.
 3. You can now create a release note.
 
    `$ cd releasenotes`
+   
+   Checkout a branch:
+   
+   `$ git checkout -b <BRANCHNAME>`
 
 4. Run the following commad to create a release note:
    
@@ -40,7 +44,6 @@ This a test repo from reno notes.
 
    Edit the template to include only the sections you want to use.
 
-
 6. Save the file.
 
 7. Add to the commit:
@@ -54,6 +57,9 @@ This a test repo from reno notes.
 9. Push back up to GitHub:
 
    `$ git push`
+ 
+10. Have someone (asettle) review your PR quickly to ensure there are no breaks.
+    Once that is complete, move to the next steps.
 
 ## Building release notes
 
