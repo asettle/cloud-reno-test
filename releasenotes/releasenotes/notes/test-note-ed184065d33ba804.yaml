@@ -1,0 +1,6 @@
+---
+prelude: >
+    Adding first release note
+features:
+  - |
+    As of Tue 4 June, this repo now has reno release notes enabled
