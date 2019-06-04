@@ -1,0 +1,32 @@
+---
+prelude: >
+    This is a test note
+features:
+  - |
+    New WIP feature -- Reno will now work out where in the tree you are and put
+    the new relnote § into the right folder automagically.
+issues:
+  - |
+    Currently does not work. Notes are created in $repodir/releasenotes/notes
+    regardless of CWD.
+upgrade:
+  - |
+    This will count as a major release due to the advanced AI required.
+deprecations:
+  - |
+    No longer works on MS-DOS 6 or earlier 
+critical:
+  - |
+    AI feature may result in PC becoming self-aware and starting a revolution.
+security:
+  - |
+    Incorrectly firewalled systems may self-initiate Skynet.
+fixes:
+  - |
+    Pathnames must be speficied in Georgian, Gujarati or Thai text. Roman and 
+    Cyrillic not supported to encourage a bit of effort from contributors.
+other:
+  - |
+    Spelling and grammar checkers included. In this beta release, errors are 
+    indicated by 240 AC being transmitted to the space bar.
+    
