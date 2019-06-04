@@ -1,0 +1,22 @@
+actionid: tox
+msg: packaging
+cmdargs: '/usr/bin/python3 /home/asettle/susedoc/cloud-reno-test/setup.py sdist --formats=zip --dist-dir /home/asettle/susedoc/cloud-reno-test/.tox/dist'
+
+/usr/lib/python3.6/site-packages/nose/plugins/manager.py:395: RuntimeWarning: Unable to load plugin html-output = htmloutput.htmloutput:HtmlOutput: No module named 'version'
+  RuntimeWarning)
+Traceback (most recent call last):
+  File "setup.py", line 30, in <module>
+    pbr=True)
+  File "/usr/lib/python3.6/site-packages/setuptools/__init__.py", line 129, in setup
+    return distutils.core.setup(**attrs)
+  File "/usr/lib64/python3.6/distutils/core.py", line 108, in setup
+    _setup_distribution = dist = klass(attrs)
+  File "/usr/lib/python3.6/site-packages/setuptools/dist.py", line 333, in __init__
+    _Distribution.__init__(self, attrs)
+  File "/usr/lib64/python3.6/distutils/dist.py", line 281, in __init__
+    self.finalize_options()
+  File "/usr/lib/python3.6/site-packages/setuptools/dist.py", line 476, in finalize_options
+    ep.load()(self, ep.name, value)
+  File "/usr/lib/python3.6/site-packages/pbr/core.py", line 92, in pbr
+    'The setup.cfg file %s does not exist.' % path)
+distutils.errors.DistutilsFileError: The setup.cfg file /home/asettle/susedoc/cloud-reno-test/setup.cfg does not exist.
