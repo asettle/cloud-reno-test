@@ -15,13 +15,12 @@ This a test repo from reno notes.
   Or
   `$ sudo zypper in python3-reno python3-pbr python3-tox`
 
-3. You can now create a release note.
-
-   `$ cd releasenotes`
-   
-   Checkout a branch:
+3. You can now create a release note. Checkout a branch:
    
    `$ git checkout -b <BRANCHNAME>`
+   
+   **IMPORTANT:** Ensure you are in the root directory of your Reno local repo
+   before you create a note or it will duplicate all of the relevant subtree.
 
 4. Run the following commad to create a release note:
    
