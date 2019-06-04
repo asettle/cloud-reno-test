@@ -1,0 +1,8 @@
+---
+deprecations:
+  - |
+    The `disappoint` functionality that could be used to automatically
+    disappoint customers is deprecated in this version of the product and will
+    be removed in the next version.
+    To disappoint customers in the future, use either the `crash_reliably`
+    or the `condescending_unicorn` functionality.
