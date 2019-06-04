@@ -19,7 +19,7 @@ This a test repo from reno notes.
    
    `$ git checkout -b <BRANCHNAME>`
    
-   IMPORTANT: Ensure you are in the root directory of your Reno local repo
+   **IMPORTANT:** Ensure you are in the root directory of your Reno local repo
    before you create a note or it will duplicate all of the relevant subtree.
 
 4. Run the following commad to create a release note:
