@@ -1,0 +1,12 @@
+---
+prelude: >
+    Test_Claudia
+features:
+  - |
+    List new features here, or remove this section.  
+    Feature 1, feature 2
+
+other:
+  - |
+    Add other notes here, or remove this section.  
+    Tralalala :)
