@@ -1,0 +1,21 @@
+#!/bin/bash
+
+tempdir=$(mktemp -d)
+
+[[ -f /usr/lib/python3.6/site-packages/sphinx_asciidoc/writer.py ]] || { echo "install sphinx-asciidoc"; exit 1; }
+
+reno report > $tempdir/notes
+cd $tempdir
+  python3 /usr/lib/python3.6/site-packages/sphinx_asciidoc/writer.py notes
+  mkdir adoc
+  mv notes.adoc adoc
+  {
+    echo 'MAIN="notes.adoc"'
+    echo 'ADOC_TYPE="article"'
+    echo 'ADOC_POST="yes"'
+    echo 'STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2013-ns"'
+    echo 'FALLBACK_STYLEROOT="/usr/share/xml/docbook/stylesheet/suse-ns"'
+    echo 'DOCBOOK5_RNG_URI="http://docbook.org/xml/5.1/rng/docbookxi.rnc"'
+  } > DC-notes
+cd - >/dev/null 2>/dev/null
+echo "DAPS-able dir at: $tempdir"
